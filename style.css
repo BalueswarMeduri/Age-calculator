@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif; /* Corrected font-family name */
+    box-sizing: border-box;
+}
+
+.container {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom, #052049, #0c3264, #114681, #125a9f, #0970be);
+    padding: 10px;
+    color: white;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.calculator h1 {
+    font-size: 50px;
+}
+
+.inputbox {
+    padding: 20px; /* Adjusted padding */
+    background: rgba(255, 255, 255, 0.3);
+    margin: 40px 0; /* Adjusted margin */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.inputbox input {
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    margin-right: 20px;
+    flex: 1;
+    border-radius: 6px;
+    position: relative;
+    font-size: 18px;
+}
+
+.inputbox button {
+    padding: 15px 30px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgb(250, 250, 102);
+    transition: background-color 0.3s ease; /* Added hover transition */
+}
+
+.inputbox button:hover {
+    background-color: rgb(230, 230, 80); /* Change background color on hover */
+}
+
+.line {
+    margin: 2px;
+    background-color: rgb(250, 250, 102);
+    height: 5px;
+    width: 60%;
+}
+
+.inputbox input::-webkit-calendar-picker-indicator {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+}
+#result{
+   margin-left:10px ;
+    font-size: 19px;
+}
+#result span{
+    color: rgb(250, 250, 102);
+}
+@media (min-width: 320px) and (max-width: 480px){
+    
+    .calculator h1 {
+        font-size: 40px;
+    }
+    .calculator {
+        width: 100%;
+        max-width: 500px;
+        margin-left: 1%;
+        margin-top: 50%;
+    }
+    .inputbox {
+        padding: 20px; /* Adjusted padding */
+        background: rgba(255, 255, 255, 0.3);
+        margin: 40px 0; /* Adjusted margin */
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .inputbox input {
+        padding: 10px 15px;
+        border: 0;
+        outline: 0;
+        margin-right: 10px;
+        flex: 1;
+        border-radius: 6px;
+        position: relative;
+        font-size: 18px;
+    }
+    
+    .inputbox button {
+        padding: 10px 20px;
+        border-radius: 6px;
+        border: none;
+        outline: none;
+        font-weight: 500;
+        cursor: pointer;
+        background-color: rgb(250, 250, 102);
+        transition: background-color 0.3s ease; /* Added hover transition */
+    }
+    .line {
+        margin: 2px;
+        background-color: rgb(250, 250, 102);
+        height: 5px;
+        width: 70%;
+    }
+    
+}
